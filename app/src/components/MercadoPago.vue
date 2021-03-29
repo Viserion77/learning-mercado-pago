@@ -191,7 +191,6 @@ export default {
         return false;
       }
     },
-
     setCardTokenAndPay(status, response) {
       if (status == 200 || status == 201) {
         let form = document.getElementById("paymentForm");
@@ -207,11 +206,9 @@ export default {
         alert("Verify filled data!\n" + JSON.stringify(response, null, 4));
       }
     },
-
     getIssuers(paymentMethodId) {
       window.Mercadopago.getIssuers(paymentMethodId, this.setIssuers);
     },
-
     getInstallments(paymentMethodId, transactionAmount, issuerId) {
       window.Mercadopago.getInstallments(
         {
@@ -222,7 +219,6 @@ export default {
         this.setInstallments
       );
     },
-
     setInstallments(status, response) {
       if (status == 200) {
         document.getElementById("installments").options.length = 0;
@@ -236,7 +232,6 @@ export default {
         alert(`installments method info error: ${response}`);
       }
     },
-
     setIssuers(status, response) {
       if (status == 200) {
         let issuerSelect = document.getElementById("issuer");
@@ -256,7 +251,6 @@ export default {
         alert(`issuers method info error: ${response}`);
       }
     },
-
     guessPaymentMethod() {
       let cardnumber = document.getElementById("cardNumber").value;
       if (cardnumber.length >= 6) {
@@ -270,7 +264,6 @@ export default {
       }
       this.doSubmit = false;
     },
-
     setPaymentMethod(status, response) {
       if (status == 200) {
         let paymentMethod = response[0];
