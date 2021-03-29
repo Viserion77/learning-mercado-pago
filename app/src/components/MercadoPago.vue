@@ -168,7 +168,7 @@ export default {
     req: {},
     res: {},
     response: {},
-    cardNumber: "503143321540635",
+    cardNumber: "503175573453060",
     documentNumber: "12345678909",
     email: "jeferson.a.oficial@gmail.com",
     cardHolder: "Jeferson Alves",

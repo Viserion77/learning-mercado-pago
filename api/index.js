@@ -16,7 +16,7 @@ app.post("/process_payment", async function (req, res) {
     description: `Teste ${req.body.description}`,
     installments: Number(req.body.installments),
     payment_method_id: req.body.paymentMethodId,
-    issuer_id: req.body.issuer,
+    issuer_id: undefined,
     payer: {
       email: req.body.email,
       identification: {
