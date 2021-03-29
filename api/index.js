@@ -25,8 +25,7 @@ app.post("/process_payment", async function (req, res) {
       }
     }
   };
-
-  await mercadopago.payment.save(payment_data)
+  mercadopago.payment.save(payment_data)
     .then(function (response) {
       res.status(response.status).json({
         status: response.body.status,
@@ -35,10 +34,8 @@ app.post("/process_payment", async function (req, res) {
       });
     })
     .catch(function (error) {
-      res.status('401').send(error);
+      res.status(error.status).send(error);
     });
-
-  res.send({ mas: 'oque é isto?' });
 });
 
 app.listen(3000);
