@@ -169,7 +169,7 @@ export default {
     res: {},
     response: {},
     cardNumber: "503143321540635",
-    documentNumber: "10094624909",
+    documentNumber: "12345678909",
     email: "jeferson.a.oficial@gmail.com",
     cardHolder: "Jeferson Alves",
     cardExpirationMonth: 11,
