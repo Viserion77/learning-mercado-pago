@@ -8,7 +8,7 @@
   },
   "author": "@Viserion77",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mercadopago": "^1.5.5"
   }
 }
