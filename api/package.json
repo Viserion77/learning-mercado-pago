@@ -9,6 +9,6 @@
   "author": "@Viserion77",
   "dependencies": {
     "express": "^4.17.3",
-    "mercadopago": "^1.5.5"
+    "mercadopago": "^1.5.14"
   }
 }
